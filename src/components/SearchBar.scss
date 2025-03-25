@@ -1,0 +1,103 @@
+$background: radial-gradient(circle, 
+   #ff9900 0%,       
+   #cc6600 50%,       
+   #361c01 100%    
+  
+      );
+body{
+    background-color: $background;
+
+  
+}
+
+
+/* ----------------------------------------------- */
+/* SEARCH BAR                                          */
+/* ----------------------------------------------- */
+
+.search-bar {
+    display: flex;
+background-color: #000000;
+    
+    // background-color: $background;
+    border: solid 1px rgb(0, 0, 0);
+    margin: 3px;
+    border-radius: 0.5em;
+
+    justify-content: space-around;
+
+    &__logo-container { /* .search-bar__logo-container */
+        width: 18.75rem;
+        height: 3.75rem;
+        
+    }
+
+    &__form-container { /* .search-bar__form-container */
+        padding: 1rem;
+
+        // background-color: $background;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+
+       
+    }
+
+    &__form-label {
+        color:orange;
+        background-color: $background;
+        border: solid orange 2px;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: .5em;;
+       
+    }
+
+    &__form-search {
+        border: 2px solid orange;
+        background-color: $background;
+        // max-width:50%;
+
+        // @media screen and (max-width:100px){
+        //    & { 
+        //     width:50px;
+        //    }
+            
+        // }
+    }
+
+    &__form-submit {
+        border: solid orange 2px;
+        background-color: $background;
+        border-top-right-radius: 0.5em ;
+        border-bottom-right-radius: 0.5em;
+    }
+
+
+    &__logo-container{
+        margin-top:2px;
+        margin-bottom:2px;
+        margin-left: 5px;;
+        background-image: url('/imagenes/logofun1.webp');
+        max-width:200px;
+        
+        background-size:cover;
+        // background-repeat: no-repeat;
+        
+        background-position:top;
+
+    }
+    &__carrito-container {
+        /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+        background-image: url('/imagenes/carritoguitarra150B.webp');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 1em;
+        // width: 100%;
+        border:#361c01 solid 2px;
+       
+        flex: 0 0 3rem; /* shorthand (grow shrink basis) */
+        // background-color: $background;
+        border: 2px solid orange;
+    }
+}

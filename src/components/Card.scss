@@ -1,0 +1,39 @@
+$background: radial-gradient(circle, 
+        #ff9c09 0%,        
+        #e47506 50%,       
+        #9e4f00 100%       
+      );
+
+
+.card {
+
+    min-width: 400px;
+    max-width: 500px;
+    height: 500px;
+    background-color: $background;
+    border:#ff9c09 solid 3px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform .2s; 
+
+    &:hover,
+    &:focus {
+
+        transform: scale(1.03) skew(0deg) rotate(2deg);
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,0.5);
+    }
+
+}
+
+.card__features {
+    min-width: 400px;
+    max-width: 500px;
+    margin-bottom: 41px;
+   
+}
+
+.title-descrip {
+    position:relative;
+    top: -30px;
+}

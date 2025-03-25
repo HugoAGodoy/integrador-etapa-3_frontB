@@ -1,0 +1,188 @@
+{
+  "productos": [
+    { 
+    "id": 1, 
+    "nombre": "Frankenstrat", 
+    "foto": "stars/EddieB400.webp", 
+    "descripcion": "Eddie Van Halen (Van Halen)", 
+    "precio": 222.20
+  },
+  { 
+    "id": 2, 
+    "nombre": "Red Special", 
+    "foto": "stars/BrianMay400.webp", 
+    "descripcion": "Brian May (Queen)", 
+    "precio": 333.30
+  },
+  { 
+    "id": 3, 
+    "nombre": "Gibson SG", 
+    "foto": "stars/angus-young-400.webp", 
+    "descripcion": "Angus Young (AC/DC)", 
+    "precio": 444.40
+  },
+  { 
+    "id": 4, 
+    "nombre": "Gibson Les Paul", 
+    "foto": "stars/slash-gibson-les-paul400.webp", 
+    "descripcion": "Slash (Guns N' Roses)", 
+    "precio": 555.50
+  },
+  { 
+    "id": 5, 
+    "nombre": "Fender Telecaster", 
+    "foto": "stars/keith-richards400.webp", 
+    "descripcion": "Keith Richards (The Rolling Stones)", 
+    "precio": 666.60
+  },
+  { 
+    "id": 6, 
+    "nombre": "Fender Stratocaster", 
+    "foto": "stars/frusciante400.webp", 
+    "descripcion": "John Frusciante (Red Hot Chili Peppers)", 
+    "precio": 666.60
+  },
+  { 
+    "id": 7, 
+    "nombre": "ESP MX-220 'EET FUK'", 
+    "foto": "stars/Hetfield400.webp", 
+    "descripcion": "James Hetfield (Metalica)", 
+    "precio": 666.60
+  },
+  { 
+    "id": 8, 
+    "nombre": "Gibson ES-355 'Lucille'", 
+    "foto": "stars/BBking400.webp", 
+    "descripcion": "B.B. King", 
+    "precio": 666.60
+  }
+  ],
+  "carrito": [
+    [
+      {
+        "nombre": "IPhone 15 Pro Max",
+        "foto": "imgs/apple-iphone-11-pro-max.jpg",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "precio": 250.5,
+        "stock": "4444",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 1,
+        "envio": false,
+        "cantidad": 3
+      },
+      {
+        "nombre": "IPhone 12",
+        "foto": "imgs/apple-iphone-12.jpg",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": "4",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 2,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Auriculares Sony",
+        "foto": "imgs/auriculares-sony.jpg",
+        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Sleek Cotton Chips",
+        "categoria": "Refined",
+        "id": 3,
+        "envio": false,
+        "cantidad": 3
+      },
+      {
+        "nombre": "Camara Canon",
+        "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "foto": "imgs/camara-canon.jpg",
+        "precio": 678,
+        "stock": 7,
+        "marca": "Rustic Soft Tuna",
+        "categoria": "Generic",
+        "id": 4,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Samsung",
+        "detalles": "Facere molestiae odio neque rerum provident voluptas",
+        "foto": "imgs/celular-samsung.jpg",
+        "precio": 1200,
+        "stock": 4,
+        "marca": "Samsung",
+        "categoria": "celulares",
+        "id": 5,
+        "envio": true,
+        "cantidad": 1
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "nombre": "Chromecast",
+        "precio": 332.22,
+        "stock": 4,
+        "marca": "Google",
+        "categoria": "Electronica",
+        "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+        "foto": "imgs/chromecast-google.jpg",
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "id": 7,
+        "nombre": "DJI Mavic 2 pro",
+        "precio": 333.22,
+        "stock": 2,
+        "marca": "DJI",
+        "categoria": "Drones",
+        "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "foto": "imgs/dji-mavic-2-pro.jpg",
+        "envio": false,
+        "cantidad": 3
+      }
+    ],
+    [
+      {
+        "nombre": "IPhone 15 Pro Max",
+        "foto": "imgs/apple-iphone-11-pro-max.jpg",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "precio": 250.5,
+        "stock": "4444",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 1,
+        "envio": false,
+        "cantidad": 1
+      },
+      {
+        "nombre": "IPhone 12",
+        "foto": "imgs/apple-iphone-12.jpg",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": "4",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 2,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Auriculares Sony",
+        "foto": "imgs/auriculares-sony.jpg",
+        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Sleek Cotton Chips",
+        "categoria": "Refined",
+        "id": 3,
+        "envio": false,
+        "cantidad": 1
+      }
+    ]
+  ]
+}

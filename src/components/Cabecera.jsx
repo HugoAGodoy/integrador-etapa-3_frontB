@@ -1,3 +1,4 @@
+import './Cabecera.scss'
 import Navbar from "./Navbar"
 import SearchBar from "./SearchBar"
 
@@ -8,7 +9,7 @@ const Cabecera = () => {
     <input type="checkbox" id="menu" />
 
     <Navbar />
-    
+
     <SearchBar />
 
   </header>

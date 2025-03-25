@@ -1,4 +1,5 @@
-import Cabecera from "../components/Cabecera"
+import './Inicio.scss'
+import Card from "../components/Card"
 
 
 const Inicio = () => {
@@ -12,7 +13,9 @@ const Inicio = () => {
         </header>
       </section>
 
-      <section className="cards-container" id="container-productos"></section>
+      <section className="cards-container" id="container-productos">
+        <Card />
+      </section>
     
     </main> 
 

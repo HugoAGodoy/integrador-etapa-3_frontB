@@ -1,0 +1,122 @@
+body{
+    background: radial-gradient(circle, 
+       #ff9c09 0%,        
+       #e47506 50%,       
+       #9e4f00 100%      
+     );
+}
+
+
+.section-cards { 
+   padding: 1rem;
+}
+
+.cards-container {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   gap: 1rem;
+ 
+
+   @media screen and (min-width: 992px) {
+       & {
+           
+           margin-left: 100px;  
+           margin-top:0px;
+       } 
+   }
+
+}
+
+
+#descrip, #instr, #imag {
+
+   font-family: "RocknRoll One", serif;
+   background: linear-gradient(135deg, #fd2600, #ff9a02);
+   color: rgb(2, 2, 2);
+   font-size: 16px;
+   font-weight: bold;
+   width:125px;    
+   border: 1px solid black;
+   border-radius: 8px;
+   margin: 1em;
+   cursor: pointer;
+   box-shadow: 0 4px 10px rgba(255, 65, 108, 0.4);
+   transition: all 0.3s ease-in-out;
+  
+ 
+   &:hover {
+     background: linear-gradient(135deg, #fd2600, #ff9a02);
+     transform: scale(1.05);
+     box-shadow: 0 6px 15px rgba(29, 15, 18, 0.6);
+   }
+ 
+   &:active {
+     transform: scale(0.95);
+     box-shadow: 0 2px 5px rgba(255, 65, 108, 0.3);
+   }
+ }
+
+
+#imag {
+   
+margin-left:0px;
+position:relative;
+
+   top: 10px;
+   left: 0;
+   z-index: 9999; 
+
+   @media screen and (min-width: 992px) {
+       & {
+     
+   position:fixed;
+   top: 220px;
+   left: 0;
+   z-index: 9999;  
+   padding: 9px 18px;
+} 
+}
+
+}
+
+#instr{
+  
+   margin-left:12px;
+    position: relative;
+   top:10px;
+   left: -25px;
+   z-index: 9999;
+   @media screen and (min-width: 992px) {
+       & {
+           margin:0px;
+           position: fixed;
+           top:290px;
+           left: 0px;
+           z-index: 9999; 
+           padding: 9px 18px;
+       }
+   }
+
+}
+
+
+
+#descrip{
+ 
+   margin-left:12px;
+   position: relative;
+   top: 10px;
+   left: -50px;
+   z-index: 9999;
+   @media screen and (min-width: 992px) {
+       & {
+           margin:0px; 
+           position: fixed;
+           top:345px;
+           left: 0px;
+           z-index: 9999; 
+           padding: 9px 18px;
+       }
+   }
+}

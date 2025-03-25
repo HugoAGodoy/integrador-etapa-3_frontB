@@ -1,0 +1,101 @@
+$background: radial-gradient(circle, 
+   #ff9900 0%,       
+   #cc6600 50%,       
+   #361c01 100%    
+  
+      );
+body{
+    background-color: $background;
+
+  
+}
+
+/* ----------------------------------------------- */
+/* HEADER                                          */
+/* ----------------------------------------------- */
+/* MOBILE FIRST */
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid 2px orange;
+    padding-top: 5px;
+    font-family: "RocknRoll One", serif;
+  
+
+    @media screen and (min-width: 992px) {
+        & {
+            flex-direction: column;
+        }
+    }
+}
+
+#menu {
+    display: none;
+
+    /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
+
+    &:checked + .nav-bar { //el + para vincular con el hermano subsiguiente, si no es subsiguiente se usa alt+126 ~
+        display: block;
+    }
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: $background;
+    }
+}
+
+
+
+/* ----------------------------------------------- */
+/* MENÚ TOOGLE                                     */
+/* ----------------------------------------------- */
+
+.menu-toogle {
+    display: block;
+
+    background-color: $background;;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer; /* manito */
+
+    &__label { /* .menu-toogle__label */
+        display: block;
+        background-color: black;
+        height: 100%;
+        border: solid 2px orange;
+    }
+
+    &__top-bread, /* .menu-toogle__top-bread */
+    &__meat, /* .menu-toogle__top-bread */
+    &__bottom-bread { /* .menu-toogle__top-bread */
+        displaY: block;
+        background-color: #333;
+        height: .2rem;
+        position: absolute;
+        left: .5rem;
+        right: .5rem;
+    }
+
+    &__top-bread {
+        top: .8rem;
+    }
+
+    &__meat { /* Centrar sin usar flexbox */
+        top: 50%; /* centrando verticalmente */
+        margin-top: -.1rem;
+    }
+
+    &__bottom-bread {
+        bottom: .8rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        & { /* .menu-toogle */
+            display: none;  
+        }
+    }
+
+}
+
+
+
+
