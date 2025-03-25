@@ -1,0 +1,88 @@
+
+
+#form-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(226, 124, 41);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    border:#ff9c09 solid 3px;
+    border-radius: 5px;
+       
+    }
+    
+    
+    .form-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    
+    .form-input, .form-select, .form-textarea {
+        width: 100%;
+        padding: 10px;
+       
+        margin-bottom: 15px;
+        border: 1px solid #ff9c09 ;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    .button-container {
+        text-align: center;
+    }
+    .boton-enviar {  
+        margin-top: 10px;
+        padding: 15px 30px;
+        background-color: #881010;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    
+    .boton-reset {
+        margin-top: 10px;
+        margin-left:100px;
+        padding: 15px 30px;
+        background-color: #881010;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .texto-rojo {
+    
+        &__nombre {
+        color: red;
+        position:relative; 
+        top: -46px;
+        left: 200px;}
+    
+    
+    
+        &__email{
+            color: red;
+            position:relative;
+            top: -46px;
+            left:200px;
+        }
+    
+        &__tel{
+            color: red;
+            position:relative;
+            top: -46px;
+            left:200px;
+        }
+    
+        &__ideas{
+        color: red;
+        position:relative;
+        top: -60px;
+        left:200px;
+     }
+    
+    }
