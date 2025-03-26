@@ -2,8 +2,12 @@
 
 import React, { useState } from 'react';
 import './Contacto.scss'
+import useTitulo from '../hooks/useTitulo';
 
 const Contacto = () => {
+
+    useTitulo('Contacto')
+
     const [formData, setFormData] = useState({
         nombre: '',
         email: '',
@@ -180,9 +184,9 @@ const Contacto = () => {
                 <button className="boton-reset" type="reset">BORRAR</button>
             </div>
 
-            <div className="return">
+            {/* <div className="return">
                 <a href="../../../index.html">Volver a Inicio</a>
-            </div>
+            </div> */}
         </form>
     );
 };

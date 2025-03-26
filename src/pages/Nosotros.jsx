@@ -1,6 +1,10 @@
+import useTitulo from '../hooks/useTitulo';
 import './Nosotros.scss'
 
 const Nosotros = () => {
+
+    useTitulo('Nosotros')
+
   return (
     <div className="container" id="nosotros">
       <h1 className="title-nos">Nosotros</h1>
@@ -23,9 +27,9 @@ const Nosotros = () => {
       </p>
       <p>Explora, elige y crea. ¡Que la música nunca deje de sonar! 🎸</p>
       
-      <div className="return">
+      {/* <div className="return">
         <a href="../../index.html">Volver a Inicio</a>
-      </div>
+      </div> */}
     </div>
   );
 };
