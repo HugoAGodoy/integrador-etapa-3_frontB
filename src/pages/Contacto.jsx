@@ -1,12 +1,9 @@
-
-
 import React, { useState } from 'react';
-import './Contacto.scss'
+import './Contacto.scss';
 import useTitulo from '../hooks/useTitulo';
 
 const Contacto = () => {
-
-    useTitulo('Contacto')
+    useTitulo('Contacto');
 
     const [formData, setFormData] = useState({
         nombre: '',
@@ -22,6 +19,8 @@ const Contacto = () => {
         tel: '',
         ideas: ''
     });
+
+    const [mensajeExito, setMensajeExito] = useState('');
 
     const validarNombre = () => {
         if (formData.nombre.trim() === '') {
@@ -110,10 +109,29 @@ const Contacto = () => {
         const ideasValido = validarIdeas();
 
         if (nombreValido && emailValido && telValido && ideasValido) {
-            console.log('Formulario enviado con éxito');
+            setMensajeExito('¡Formulario enviado con éxito!');
+            setTimeout(() => setMensajeExito(''), 5000);
+            handleReset();
         } else {
-            console.error('No se envía el formulario porque hay errores');
+            setMensajeExito('');
         }
+    };
+
+    const handleReset = () => {
+        setFormData({
+            nombre: '',
+            email: '',
+            tel: '',
+            ideas: '',
+            influencias: ''
+        });
+
+        setErrors({
+            nombre: '',
+            email: '',
+            tel: '',
+            ideas: ''
+        });
     };
 
     return (
@@ -181,12 +199,12 @@ const Contacto = () => {
 
             <div className="button-container">
                 <button className="boton-enviar" type="submit">ENVIAR</button>
-                <button className="boton-reset" type="reset">BORRAR</button>
+                <button className="boton-reset" type="button" onClick={handleReset}>
+                    BORRAR
+                </button>
             </div>
 
-            {/* <div className="return">
-                <a href="../../../index.html">Volver a Inicio</a>
-            </div> */}
+            {mensajeExito && <p className="mensaje-exito">{mensajeExito}</p>}
         </form>
     );
 };
