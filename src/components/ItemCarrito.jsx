@@ -8,7 +8,7 @@ const ItemCarrito = ({producto}) => {
 
     const handleEliminar = (id) => {
         console.log('Eliminando el producto...', id)
-        //eliminarProductoDelCarritoContext(id)
+        eliminarProductoDelCarritoContext(id)
     }
 
   return (

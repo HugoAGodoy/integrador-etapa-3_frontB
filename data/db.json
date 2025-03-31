@@ -200,6 +200,34 @@
         "envio": false,
         "cantidad": 1
       }
-    ]
+    ],
+    {
+      "id": "7d11",
+      "createAt": 1743381138915,
+      "cantidad": 2,
+      "carrito": [
+        {
+          "id": "2",
+          "nombre": "Red Special",
+          "foto": "stars/BrianMay400.webp",
+          "descripcion": "Brian May (Queen)",
+          "precio": 333.3,
+          "cantidad": 1
+        },
+        {
+          "id": "1",
+          "nombre": "Frankenstrat",
+          "foto": "stars/EddieB400.webp",
+          "descripcion": "Eddie Van Halen (Van Halen)",
+          "precio": 222.2,
+          "stock": "5",
+          "marca": "fender",
+          "categoria": "instrumento",
+          "detalles": "vintage",
+          "envio": false,
+          "cantidad": 4
+        }
+      ]
+    }
   ]
 }

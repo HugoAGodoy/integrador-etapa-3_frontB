@@ -33,8 +33,21 @@ if (!elProductoEstaEnElCarrito(producto)) {
 
 }
 
+const eliminarProductoDelCarritoContext = (id) => {
+    console.log(id)
+    eliminarDelCarrito(id)
+}
+
+
+const limpiarCarritoContext = () =>{
+    console.log('limpando carrito')
+    limpiarCarrito()
+
+}
     const data ={
         agregarProductoAlCarritoContext,
+        eliminarProductoDelCarritoContext,
+        limpiarCarritoContext,
         carrito
     }
 
