@@ -63,7 +63,7 @@ const guardarCarritoBackendContext = async () => {
         const options = {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify(dataCarrito)
+            body: JSON.stringify(carrito)
         };
 
         const carritoGuardado = await peticionesHttp(urlCarrito, options);

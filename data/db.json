@@ -63,5 +63,44 @@
       "detalles": "vintage"
     }
   ],
-  "carrito": []
+  "carrito": [
+    {
+      "0": {
+        "id": "5",
+        "nombre": "Fender Telecaster",
+        "foto": "stars/keith-richards400.webp",
+        "descripcion": "Keith Richards (The Rolling Stones)",
+        "precio": 666.6,
+        "cantidad": 1
+      },
+      "1": {
+        "id": "6",
+        "nombre": "Fender Stratocaster",
+        "foto": "stars/frusciante400.webp",
+        "descripcion": "John Frusciante (Red Hot Chili Peppers)",
+        "precio": 666.6,
+        "cantidad": 5
+      },
+      "2": {
+        "id": "7",
+        "nombre": "ESP MX-220 'EET FUK'",
+        "foto": "stars/Hetfield400.webp",
+        "descripcion": "James Hetfield (Metallica)",
+        "precio": 666.6,
+        "cantidad": 3
+      },
+      "id": "bd2f"
+    },
+    {
+      "0": {
+        "id": "3",
+        "nombre": "Gibson SG",
+        "foto": "stars/angus-young-400.webp",
+        "descripcion": "Angus Young (AC/DC)",
+        "precio": 444.4,
+        "cantidad": 3
+      },
+      "id": "7dd7"
+    }
+  ]
 }

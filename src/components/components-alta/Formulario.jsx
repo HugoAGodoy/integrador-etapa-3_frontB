@@ -1,5 +1,6 @@
-import { useContext, useEffect, useState } from "react"
-import ProductosContext from "../../contexts/ProductosContext"
+import { useContext, useEffect, useState } from "react";
+import ProductosContext from "../../contexts/ProductosContext";
+import './Formulario.scss';
 
 const Formulario = () => {
 
@@ -62,88 +63,90 @@ setProductoAEditar(null)
 
     return (
       <>
-          <h2>Agregar: Editar</h2>
-  
-          <form onSubmit={handleSubmit}>
-             
-              <div>
-                  <label htmlFor="lbl-nombre">Nombre</label>
-                  <input 
+        <div className="formulario-container">
+    
+          <form className="formulario" onSubmit={handleSubmit}>
+          <h1 className="titulo-ppal-form">Formulario de Alta de Productos</h1>
+          <h2 className="titulo-form">Agregar: Editar</h2>
+
+              <div className="form-group">
+                  <label className="label-form" htmlFor="lbl-nombre">Nombre</label>
+                  <input className="imput-form"
                   type="text" 
                   id="lbl-nombre" 
                   name="nombre" 
                   value={form.nombre} 
                   onChange={handleChange} />
               </div>
-              <div>
-                  <label htmlFor="lbl-precio">Precio</label>
-                  <input 
+              <div className="form-group">
+                  <label className="label-form" htmlFor="lbl-precio">Precio</label>
+                  <input  className="imput-form"
                   type="text" 
                   id="lbl-precio" 
                   name="precio" 
                   value={form.precio} 
                   onChange={handleChange} />
               </div>
-              <div>
-                  <label htmlFor="lbl-stock">Stock</label>
-                  <input 
+              <div className="form-group">
+                  <label className="label-form" htmlFor="lbl-stock">Stock</label>
+                  <input className="imput-form"
                   type="text" 
                   id="lbl-stock" 
                   name="stock" 
                   value={form.stock} 
                   onChange={handleChange} />
               </div>
-              <div>
-                <label htmlFor="lbl-marca">Marca</label>
-                <input 
+              <div className="form-group">
+                <label className="label-form" htmlFor="lbl-marca">Marca</label>
+                <input className="imput-form"
                     type="text" 
                     id="lbl-marca" 
                     name="marca" 
                     value={form.marca} 
                     onChange={handleChange}  />
             </div>
-              <div>
-                  <label htmlFor="lbl-categoria">Categoría</label>
-                  <input 
+              <div className="form-group">
+                  <label className="label-form" htmlFor="lbl-categoria">Categoría</label>
+                  <input className="imput-form"
                   type="text" 
                   id="lbl-categoria" 
                   name="categoria" 
                   value={form.categoria} 
                   onChange={handleChange} />
               </div>
-              <div>
-                  <label htmlFor="lbl-detalle">Detalles</label>
-                  <input 
+              <div className="form-group">
+                  <label className="label-form" htmlFor="lbl-detalle">Detalles</label>
+                  <input className="imput-form"
                   type="text" 
                   id="lbl-detalle" 
                   name="detalles" 
                   value={form.detalles} 
                   onChange={handleChange} />
               </div>
-              <div>
-                  <label htmlFor="lbl-foto">Foto</label>
-                  <input 
+              <div className="form-group">
+                  <label className="label-form" htmlFor="lbl-foto">Foto</label>
+                  <input className="imput-form"
                   type="text" 
                   id="lbl-foto" 
                   name="foto" 
                   value={form.foto} 
                   onChange={handleChange} />
               </div>
-              <div>
-                  <label htmlFor="lbl-envio">Envío</label>
-                  <input 
+              <div className="form-group-check">
+                  <label className="label-check" htmlFor="lbl-envio">Envío</label>
+                  <input className="imput-check"
                   type="checkbox" 
                   id="lbl-envio" 
                   name="envio" 
                   checked={form.envio} 
                   onChange={handleChange} />
               </div>
-  
-              <button type="submit">Guardar : Editar</button>
-              <button type="reset" onClick={handleReset}>Limpiar</button>
-  
+             <div className="botones-form">
+              <button className="boton-submit" type="submit">GUARDAR</button>
+              <button className="boton-clear" type="reset" onClick={handleReset}>LIMPIAR</button>
+              </div>
           </form>
-      
+     </div>  
       </>
     )
   }
