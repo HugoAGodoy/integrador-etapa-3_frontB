@@ -19,6 +19,7 @@ const ItemCarrito = ({producto}) => {
         <td>{producto.nombre}</td>
         <td>{producto.cantidad}</td>
         <td>{producto.precio}</td>
+        <td>{producto.cantidad * producto.precio}</td>
         <td>
             <button onClick={() => handleEliminar(producto.id)}>Eliminar</button>
         </td>
