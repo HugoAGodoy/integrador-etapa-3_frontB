@@ -33,7 +33,9 @@ const handleSubmit = (e) => {
     e.preventDefault()
 
     if (form.id === null) {
-        crearProductoContext(form)  
+        crearProductoContext(form) ; 
+        handleReset();
+
     }else {
         actualizarProductoContext(form)
     }

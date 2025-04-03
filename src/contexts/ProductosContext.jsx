@@ -49,6 +49,9 @@ const ProductosProvider = ( { children } ) => {
             const nuevoEstadoProductos = [...productos, prods]
             setProductos(nuevoEstadoProductos)
 
+         
+            
+
         } catch (error) {
             console.error('[crearProductoContext]', error)
 
@@ -73,6 +76,8 @@ const ProductosProvider = ( { children } ) => {
 
             const nuevoEstadoProductos = productos.map(prod => prod.id === productoEditado.id ? productoEditado : prod)
             setProductos(nuevoEstadoProductos)
+
+
             
         } catch (error) {
             console.error('[actualizarProductoContext]', error)
@@ -95,6 +100,8 @@ const ProductosProvider = ( { children } ) => {
 
             const nuevoEstadoProductos = productos.filter(prod => prod.id !== id)
             setProductos(nuevoEstadoProductos)
+          
+            
             
         } catch (error) {
             console.error('[eliminarProductoContext]', error)

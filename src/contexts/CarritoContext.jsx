@@ -54,11 +54,11 @@ const guardarCarritoBackendContext = async () => {
     try {
         console.log('Llego al contexto la señal de guardado'); 
      
-        const dataCarrito = {
-            createAt: Date.now(),
-            cantidad: carrito.length,
-            carrito
-        }
+        // const dataCarrito = {
+        //     createAt: Date.now(),
+        //     cantidad: carrito.length,
+        //     carrito
+        // }
 
         const options = {
             method: 'POST',

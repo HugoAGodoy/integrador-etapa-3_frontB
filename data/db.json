@@ -61,17 +61,6 @@
       "descripcion": "B.B. King",
       "precio": 666.6,
       "detalles": "vintage"
-    },
-    {
-      "id": "d101",
-      "nombre": "bajo",
-      "precio": "345",
-      "stock": "1",
-      "marca": "fender",
-      "categoria": "jazzbass",
-      "detalles": "vintage",
-      "foto": "imagenes/logofun1.webp",
-      "envio": true
     }
   ],
   "carrito": []

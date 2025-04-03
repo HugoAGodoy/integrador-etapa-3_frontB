@@ -21,6 +21,7 @@ const ListadoCarrito = () => {
         limpiarCarritoContext()
     }
 
+    const totalCompra = carrito.reduce((total, producto) => total + (producto.cantidad * producto.precio), 0);
 
     
   return (
@@ -40,7 +41,7 @@ const ListadoCarrito = () => {
             {
                 carrito.length <= 0 ? (
                     <tr>
-                        <td colSpan={5} style={{textAlign: 'center'}}>No hay productos</td>
+                        <td colSpan={6} style={{textAlign: 'center'}}>No hay productos</td>
                     </tr>
                 ) : (
                     carrito.map((producto, idx) => (
@@ -49,6 +50,19 @@ const ListadoCarrito = () => {
                 )
             }
         </tbody>
+
+        {carrito.length > 0 && (
+                <tfoot>
+                    <tr>
+                        <td colSpan={4} style={{ textAlign: 'right', fontWeight: 'bold' }}>Total Compra:</td>
+                        <td style={{ fontWeight: 'bold' }}>${totalCompra}</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            )}
+
+
+
     </table>
     <hr />
     { !carrito.length <= 0 && (
