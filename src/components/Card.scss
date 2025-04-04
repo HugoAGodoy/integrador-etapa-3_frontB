@@ -19,7 +19,7 @@ $background: radial-gradient(circle,
     &:hover,
     &:focus {
 
-        transform: scale(1.03) skew(0deg) rotate(2deg);
+        transform: scale(1.03) skew(0deg) rotate(1deg);
         transform-origin: bottom;
         box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,0.5);
     }
@@ -36,4 +36,38 @@ $background: radial-gradient(circle,
 .title-descrip {
     position:relative;
     top: -30px;
+}
+
+
+
+.boton-card {  
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #881010;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        //   background: #e22d00;
+          font-size: 16px;
+          background:#550808;
+          
+        }
+}
+
+.boton-music {
+    background-color: #fd6500;
+    margin-bottom: 21px;
+    margin-right:10px;
+    margin-top:10px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #ce773d ;
+        
+    }
 }

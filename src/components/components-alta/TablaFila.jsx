@@ -21,10 +21,12 @@ const TablaFila = ({ producto }) => {
     });
   };
 
+  const handleEditar = (producto) => {
+    setProductoAEditar(producto);
+  };
 
-  const handleEditar = (producto)  => {
-    setProductoAEditar(producto)
-  } 
+
+  const imagenSrc = producto.foto2 ? producto.foto2 : './imagenes/logofun1.webp';
 
   return (
     <tr>
@@ -35,7 +37,7 @@ const TablaFila = ({ producto }) => {
       <td>{producto.categoria}</td>
       <td>{producto.detalles}</td>
       <td>
-        <img src={producto.foto} alt={producto.nombre} style={{ width: "40px" }} />
+        <img src={imagenSrc} alt={producto.nombre} style={{ width: "40px" }} />
       </td>
       <td>{producto.envio ? "si" : "no"}</td>
       <td>
@@ -47,4 +49,4 @@ const TablaFila = ({ producto }) => {
   );
 };
 
-export default TablaFila
+export default TablaFila;

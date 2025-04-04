@@ -3,7 +3,9 @@
     {
       "id": "1",
       "nombre": "Frankenstrat",
-      "foto": "stars/EddieB400.webp",
+      "foto1": "stars/EddieB400.webp",
+      "foto2": "guitars/eddie-van-halen-frankenstrat-electric-guitar.webp",
+      "foto3": "caracteristicas/Franken-caract.webp",
       "descripcion": "Eddie Van Halen (Van Halen)",
       "precio": 222.2,
       "stock": "5",
@@ -15,49 +17,63 @@
     {
       "id": "2",
       "nombre": "Red Special",
-      "foto": "stars/BrianMay400.webp",
+      "foto1": "stars/BrianMay400.webp",
+      "foto2": "guitars/RedSpecial400.webp",
+      "foto3": "caracteristicas/Red-caract.webp",
       "descripcion": "Brian May (Queen)",
       "precio": 333.3
     },
     {
       "id": "3",
       "nombre": "Gibson SG",
-      "foto": "stars/angus-young-400.webp",
+      "foto1": "stars/angus-young-400.webp",
+      "foto2": "guitars/GibsonSG400.webp",
+      "foto3": "caracteristicas/GibsonSG-caract.webp",
       "descripcion": "Angus Young (AC/DC)",
       "precio": 444.4
     },
     {
       "id": "4",
       "nombre": "Gibson Les Paul",
-      "foto": "stars/slash-gibson-les-paul400.webp",
+      "foto1": "stars/slash-gibson-les-paul400.webp",
+      "foto2": "guitars/JessicaSlash400.webp",
+      "foto3": "caracteristicas/LesPaul-caract.webp",
       "descripcion": "Slash (Guns N' Roses)",
       "precio": 555.5
     },
     {
       "id": "5",
       "nombre": "Fender Telecaster",
-      "foto": "stars/keith-richards400.webp",
+      "foto1": "stars/keith-richards400.webp",
+      "foto2": "guitars/Tele400B.webp",
+      "foto3": "caracteristicas/Tele-caract.webp",
       "descripcion": "Keith Richards (The Rolling Stones)",
       "precio": 666.6
     },
     {
       "id": "6",
       "nombre": "Fender Stratocaster",
-      "foto": "stars/frusciante400.webp",
+      "foto1": "stars/frusciante400.webp",
+      "foto2": "guitars/strato-frusciante.webp",
+      "foto3": "caracteristicas/Strato-caract.webp",
       "descripcion": "John Frusciante (Red Hot Chili Peppers)",
       "precio": 666.6
     },
     {
       "id": "7",
       "nombre": "ESP MX-220 'EET FUK'",
-      "foto": "stars/Hetfield400.webp",
+      "foto1": "stars/Hetfield400.webp",
+      "foto2": "guitars/eetfuck400.webp",
+      "foto3": "caracteristicas/EESP-caract.webp",
       "descripcion": "James Hetfield (Metallica)",
       "precio": 666.6
     },
     {
       "id": "8",
       "nombre": "Gibson ES-355 'Lucille'",
-      "foto": "stars/BBking400.webp",
+      "foto1": "stars/BBking400.webp",
+      "foto2": "guitars/lucille400jpg.webp",
+      "foto3": "caracteristicas/ES355-caract.webp",
       "descripcion": "B.B. King",
       "precio": 666.6,
       "detalles": "vintage"
@@ -101,6 +117,45 @@
         "cantidad": 3
       },
       "id": "7dd7"
+    },
+    {
+      "0": {
+        "id": "1",
+        "nombre": "Frankenstrat",
+        "foto1": "stars/EddieB400.webp",
+        "foto2": "guitars/eddie-van-halen-frankenstrat-electric-guitar.webp",
+        "foto3": "caracteristicas/Franken-caract.webp",
+        "descripcion": "Eddie Van Halen (Van Halen)",
+        "precio": 222.2,
+        "stock": "5",
+        "marca": "fender",
+        "categoria": "instrumento",
+        "detalles": "vintage",
+        "envio": false,
+        "cantidad": 3
+      },
+      "1": {
+        "id": "2",
+        "nombre": "Red Special",
+        "foto1": "stars/BrianMay400.webp",
+        "foto2": "guitars/RedSpecial400.webp",
+        "foto3": "caracteristicas/Red-caract.webp",
+        "descripcion": "Brian May (Queen)",
+        "precio": 333.3,
+        "cantidad": 4
+      },
+      "2": {
+        "id": "8",
+        "nombre": "Gibson ES-355 'Lucille'",
+        "foto1": "stars/BBking400.webp",
+        "foto2": "guitars/lucille400jpg.webp",
+        "foto3": "caracteristicas/ES355-caract.webp",
+        "descripcion": "B.B. King",
+        "precio": 666.6,
+        "detalles": "vintage",
+        "cantidad": 1
+      },
+      "id": "3c47"
     }
   ]
 }
