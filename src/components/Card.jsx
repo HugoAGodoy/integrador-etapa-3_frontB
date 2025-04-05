@@ -25,7 +25,7 @@ const Card = ({ producto }) => {
       <div className="botones-imagenes">
         <button className="boton-music" onClick={() => handleImagenChange(producto.foto1)}>MÚSICO</button>
         <button className="boton-music" onClick={() => handleImagenChange(producto.foto2)}>GUITARRA</button>
-        <button className="boton-music" onClick={() => handleImagenChange(producto.foto3)}>CARACTERÍSTICAS</button>
+        <button className="boton-music" onClick={() => handleImagenChange(producto.foto3)}>DETALLE</button>
       </div>
 
       {/* Contenedor de la card */}

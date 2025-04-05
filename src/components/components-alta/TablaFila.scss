@@ -1,0 +1,73 @@
+.modal-imagen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.imagen-ampliada {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.foto-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-tabla {
+    width: 50px;
+    cursor: pointer;
+}
+
+.boton-ver {
+    margin-top: 5px;
+    background-color: #881010;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+    &:hover {
+    
+          background:#550808;
+        }
+}
+
+.boton-columna {
+    margin-top: 5px;
+    background-color: #881010;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+      
+    &:hover {
+    
+        background:#550808;
+      }
+}

@@ -7,12 +7,12 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808969/eddie-van-halen-frankenstrat-electric-guitar_f7pxio.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808934/Franken-caract_aq1ytk.webp",
       "descripcion": "Eddie Van Halen (Van Halen)",
-      "precio": 222.2,
-      "stock": "5",
-      "marca": "fender",
-      "categoria": "instrumento",
-      "detalles": "vintage",
-      "envio": false
+      "precio": 1111.1,
+      "stock": 2,
+      "marca": "Fender no oficial",
+      "categoria": "Híbrido, con modificaciones poco convenciales",
+      "detalles": "Reconstruida por Van Halen",
+      "envio": true
     },
     {
       "id": "2",
@@ -21,7 +21,12 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808974/RedSpecial400_dwovwv.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808937/Red-caract_wfqr22.webp",
       "descripcion": "Brian May (Queen)",
-      "precio": 333.3
+      "precio": 222.2,
+      "stock": 4,
+      "marca": "Guitarra de autor",
+      "categoria": "Custom, construida desde cero artesanalmente",
+      "detalles": "Única en su estilo, definió el sonido de Queen",
+      "envio": true
     },
     {
       "id": "3",
@@ -30,7 +35,12 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808971/GibsonSG400_ahlykl.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808935/GibsonSG-caract_oh3zpg.webp",
       "descripcion": "Angus Young (AC/DC)",
-      "precio": 444.4
+      "precio": 333.3,
+      "stock": 5,
+      "marca": "Gibson",
+      "categoria": "Vintage rockera de cuerpo sólido",
+      "detalles": "Clásica guitarra de AC/DC",
+      "envio": true
     },
     {
       "id": "4",
@@ -39,7 +49,12 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808972/JessicaSlash400_u1e3o2.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808936/LesPaul-caract_wwqy8m.webp",
       "descripcion": "Slash (Guns N' Roses)",
-      "precio": 555.5
+      "precio": 444.4,
+      "stock": 7,
+      "marca": "Gibson",
+      "categoria": "Cuerpo masizo, icónica para Rock y Blues",
+      "detalles": "Sonido profundo, con cuerpo y sustain",
+      "envio": true
     },
     {
       "id": "5",
@@ -48,7 +63,12 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808976/Tele400B_uzvrxx.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808938/Tele-caract_o8dwvd.webp",
       "descripcion": "Keith Richards (The Rolling Stones)",
-      "precio": 666.6
+      "precio": 555.5,
+      "stock": 4,
+      "marca": "Fender",
+      "categoria": "Emblemática en Country y Rock Clásico",
+      "detalles": "Sonido brillante, agudo y con mucho twang",
+      "envio": true
     },
     {
       "id": "6",
@@ -57,7 +77,12 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808975/strato-frusciante_u8gyzh.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808938/Strato-caract_jd92ef.webp",
       "descripcion": "John Frusciante (Red Hot Chili Peppers)",
-      "precio": 666.6
+      "precio": 666.6,
+      "stock": 5,
+      "marca": "Fender",
+      "categoria": "Versátil y popular en diversos estilos ",
+      "detalles": "Sonido cálido y cristalino",
+      "envio": true
     },
     {
       "id": "7",
@@ -66,7 +91,12 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808970/eetfuck400_awodo4.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808934/EESP-caract_pagmwe.webp",
       "descripcion": "James Hetfield (Metallica)",
-      "precio": 666.6
+      "precio": 777.7,
+      "stock": 4,
+      "marca": "ESP",
+      "categoria": "Orientada al Metal y al Hard Rock",
+      "detalles": "La serie MX esta inspirada en la Gibson Explorer",
+      "envio": true
     },
     {
       "id": "8",
@@ -75,98 +105,13 @@
       "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808973/lucille400jpg_nj2ajv.webp",
       "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808934/ES355-caract_xudydr.webp",
       "descripcion": "B.B. King",
-      "precio": 666.6,
-      "detalles": "vintage"
-    },
-    {
-      "id": "98e5",
-      "nombre": "prueba",
-      "precio": "23.5",
-      "stock": "456",
-      "marca": "patito",
-      "categoria": "instrumento",
-      "detalles": "sdfasdff",
-      "foto": "",
+      "precio": 888.8,
+      "stock": 3,
+      "marca": "Gibson",
+      "categoria": "Semi-Hollow, icónica de B.B. King",
+      "detalles": "Cuerpo semi-hueco, sonido cálido y resonante",
       "envio": true
     }
   ],
-  "carrito": [
-    {
-      "0": {
-        "id": "5",
-        "nombre": "Fender Telecaster",
-        "foto": "stars/keith-richards400.webp",
-        "descripcion": "Keith Richards (The Rolling Stones)",
-        "precio": 666.6,
-        "cantidad": 1
-      },
-      "1": {
-        "id": "6",
-        "nombre": "Fender Stratocaster",
-        "foto": "stars/frusciante400.webp",
-        "descripcion": "John Frusciante (Red Hot Chili Peppers)",
-        "precio": 666.6,
-        "cantidad": 5
-      },
-      "2": {
-        "id": "7",
-        "nombre": "ESP MX-220 'EET FUK'",
-        "foto": "stars/Hetfield400.webp",
-        "descripcion": "James Hetfield (Metallica)",
-        "precio": 666.6,
-        "cantidad": 3
-      },
-      "id": "bd2f"
-    },
-    {
-      "0": {
-        "id": "3",
-        "nombre": "Gibson SG",
-        "foto": "stars/angus-young-400.webp",
-        "descripcion": "Angus Young (AC/DC)",
-        "precio": 444.4,
-        "cantidad": 3
-      },
-      "id": "7dd7"
-    },
-    {
-      "0": {
-        "id": "1",
-        "nombre": "Frankenstrat",
-        "foto1": "stars/EddieB400.webp",
-        "foto2": "guitars/eddie-van-halen-frankenstrat-electric-guitar.webp",
-        "foto3": "caracteristicas/Franken-caract.webp",
-        "descripcion": "Eddie Van Halen (Van Halen)",
-        "precio": 222.2,
-        "stock": "5",
-        "marca": "fender",
-        "categoria": "instrumento",
-        "detalles": "vintage",
-        "envio": false,
-        "cantidad": 3
-      },
-      "1": {
-        "id": "2",
-        "nombre": "Red Special",
-        "foto1": "stars/BrianMay400.webp",
-        "foto2": "guitars/RedSpecial400.webp",
-        "foto3": "caracteristicas/Red-caract.webp",
-        "descripcion": "Brian May (Queen)",
-        "precio": 333.3,
-        "cantidad": 4
-      },
-      "2": {
-        "id": "8",
-        "nombre": "Gibson ES-355 'Lucille'",
-        "foto1": "stars/BBking400.webp",
-        "foto2": "guitars/lucille400jpg.webp",
-        "foto3": "caracteristicas/ES355-caract.webp",
-        "descripcion": "B.B. King",
-        "precio": 666.6,
-        "detalles": "vintage",
-        "cantidad": 1
-      },
-      "id": "3c47"
-    }
-  ]
+  "carrito": []
 }

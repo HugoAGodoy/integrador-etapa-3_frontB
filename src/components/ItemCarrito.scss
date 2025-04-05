@@ -1,0 +1,15 @@
+
+    .boton-eliminar {
+        margin-top: 5px;
+        background-color: #881010;
+        color: white;
+        padding: 3px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px;
+          
+        &:hover {
+        
+            background:#550808;
+          }
+    }
