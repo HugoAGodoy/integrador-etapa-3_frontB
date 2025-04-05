@@ -10,7 +10,7 @@ const ItemCarrito = ({ producto }) => {
   };
 
   
-  const imagenSrc = producto.foto2 ? producto.foto2 : './imagenes/logofun1.webp';
+  const imagenSrc = producto.foto2 ? producto.foto2 : 'https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743809003/logofun1_cxokng.webp';
 
   return (
     <tr>

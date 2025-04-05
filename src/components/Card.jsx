@@ -8,7 +8,7 @@ const Card = ({ producto }) => {
 
   // Imagen por defecto si el campo está vacío o undefined
   const getImagenSrc = (imagen) => {
-    return imagen ? imagen : './imagenes/logofun1.webp'
+    return imagen ? imagen : 'https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743809003/logofun1_cxokng.webp'
   };
 
   const handleImagenChange = (imagen) => {

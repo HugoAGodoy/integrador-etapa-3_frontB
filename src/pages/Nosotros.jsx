@@ -10,7 +10,7 @@ const Nosotros = () => {
       <h1 className="title-nos">Nosotros</h1>
       <img 
         className="nos-img" 
-        src="/public/imagenes/funaticNosotros.webp" 
+        src="https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743809000/funaticNosotros_gna5oq.webp" 
         alt="Guitarra con el logo de Funatic! Guitars" 
       />
       <p>
