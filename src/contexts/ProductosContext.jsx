@@ -1,127 +1,106 @@
 import { createContext, useEffect, useState } from "react";
 import { peticionesHttp } from "../helpers/peticiones-http";
+import { API_PRODUCTOS_URL } from "../config/apiConfig";
 
-const ProductosContext = createContext()
+const ProductosContext = createContext();
 
-const ProductosProvider = ( { children } ) => {
-   
-    const url = import.meta.env.VITE_BACKEND_PRODUCTOS
-    
-    const [productos, setProductos] = useState([])
-    
-    const [productoAEditar, setProductoAEditar] = useState(null)
-
+const ProductosProvider = ({ children }) => {
+    const [productos, setProductos] = useState([]);
+    const [productoAEditar, setProductoAEditar] = useState(null);
 
     useEffect(() => {
-        getAllProductos()
-    }, [])
-    
+        getAllProductos();
+    }, []);
 
+    // ✅ Obtener todos los productos
     const getAllProductos = async () => {
-
         try {
-            
-            const prods = await peticionesHttp(url, {})
-
-            setProductos(prods)
-
+            const prods = await peticionesHttp(API_PRODUCTOS_URL);
+            setProductos(prods);
         } catch (error) {
-            console.error('[getAllProductos]', error)
+            console.error('[getAllProductos]', error.message);
         }
+    };
 
-    }
-
-     const crearProductoContext = async (productoNuevo) => {
-      /* console.log(productoNuevo)*/
-
+    // ✅ Crear un nuevo producto
+    const crearProductoContext = async (productoNuevo) => {
         try {
-
-            delete productoNuevo.id
+            delete productoNuevo.id;
 
             const options = {
                 method: 'POST',
-                headers: { 'content-type': 'application/json'},
+                headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(productoNuevo)
+            };
+
+            const prodCreado = await peticionesHttp(API_PRODUCTOS_URL, options);
+            if (prodCreado) {
+                setProductos([...productos, prodCreado]);
             }
-
-            const prods = await peticionesHttp(url, options)
-            
-            const nuevoEstadoProductos = [...productos, prods]
-            setProductos(nuevoEstadoProductos)
-
-         
-            
-
         } catch (error) {
-            console.error('[crearProductoContext]', error)
-
+            console.error('[crearProductoContext]', error.message);
         }
+    };
 
-     }
-
-     const actualizarProductoContext = async (productoAEditar) => {
-
+    // ✅ Actualizar un producto existente
+    const actualizarProductoContext = async (productoAEditar) => {
         try {
-
             const options = {
                 method: 'PUT',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(productoAEditar)
+            };
+
+            // URL con el ID del producto para actualizar
+            const urlActualizar = `${API_PRODUCTOS_URL}/${productoAEditar.id}`;
+
+            const productoEditado = await peticionesHttp(urlActualizar, options);
+            if (productoEditado) {
+                const nuevoEstadoProductos = productos.map(prod => 
+                    prod.id === productoEditado.id ? productoEditado : prod
+                );
+                setProductos(nuevoEstadoProductos);
             }
-
-            const urlActualizar = url + productoAEditar.id
-
-            const productoEditado = await peticionesHttp(urlActualizar, options)
-            console.log(productoEditado)
-
-            const nuevoEstadoProductos = productos.map(prod => prod.id === productoEditado.id ? productoEditado : prod)
-            setProductos(nuevoEstadoProductos)
-
-
-            
         } catch (error) {
-            console.error('[actualizarProductoContext]', error)
+            console.error('[actualizarProductoContext]', error.message);
         }
-     }
+    };
 
-     const eliminarProductoContext = async (id) => {
-        // console.log(id)
-
+    // ✅ Eliminar un producto
+    const eliminarProductoContext = async (id) => {
         try {
-
-            const urlEliminacion = url + id
+            const urlEliminacion = `${API_PRODUCTOS_URL}/${id}`;
 
             const options = {
                 method: 'DELETE'
+            };
+
+            const prodEliminado = await peticionesHttp(urlEliminacion, options);
+            if (prodEliminado) {
+                const nuevoEstadoProductos = productos.filter(prod => prod.id !== id);
+                setProductos(nuevoEstadoProductos);
             }
-
-            const prodEliminado = await peticionesHttp(urlEliminacion, options)
-            console.log(prodEliminado)
-
-            const nuevoEstadoProductos = productos.filter(prod => prod.id !== id)
-            setProductos(nuevoEstadoProductos)
-          
-            
-            
         } catch (error) {
-            console.error('[eliminarProductoContext]', error)
+            console.error('[eliminarProductoContext]', error.message);
         }
+    };
 
-    }
-
-
+    // Datos compartidos en el contexto
     const data = {
-        productos, 
+        productos,
         crearProductoContext,
         actualizarProductoContext,
         eliminarProductoContext,
-        productoAEditar, 
+        productoAEditar,
         setProductoAEditar
-    }
+    };
 
-    return <ProductosContext.Provider value={data}> {children} </ProductosContext.Provider>
-}
+    return (
+        <ProductosContext.Provider value={data}>
+            {children}
+        </ProductosContext.Provider>
+    );
+};
 
-export { ProductosProvider }
-export default ProductosContext
-
+export { ProductosProvider };
+export default ProductosContext;

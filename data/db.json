@@ -113,5 +113,24 @@
       "envio": true
     }
   ],
-  "carrito": []
+  "carrito": [
+    {
+      "0": {
+        "id": "1",
+        "nombre": "Frankenstrat",
+        "foto1": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808178/EddieB400_elszma.webp",
+        "foto2": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808969/eddie-van-halen-frankenstrat-electric-guitar_f7pxio.webp",
+        "foto3": "https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743808934/Franken-caract_aq1ytk.webp",
+        "descripcion": "Eddie Van Halen (Van Halen)",
+        "precio": 1111.1,
+        "stock": 2,
+        "marca": "Fender no oficial",
+        "categoria": "Híbrido, con modificaciones poco convenciales",
+        "detalles": "Reconstruida por Van Halen",
+        "envio": true,
+        "cantidad": 1
+      },
+      "id": "db84"
+    }
+  ]
 }

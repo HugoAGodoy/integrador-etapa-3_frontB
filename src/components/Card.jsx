@@ -6,7 +6,7 @@ const Card = ({ producto }) => {
   const { agregarProductoAlCarritoContext } = useContext(CarritoContext);
   const [imagenActual, setImagenActual] = useState(producto.foto1);
 
-  // Imagen por defecto si el campo está vacío o undefined
+ 
   const getImagenSrc = (imagen) => {
     return imagen ? imagen : 'https://res.cloudinary.com/dwpzgd7kr/image/upload/v1743809003/logofun1_cxokng.webp'
   };
@@ -21,14 +21,14 @@ const Card = ({ producto }) => {
 
   return (
     <div className="card-container"> 
-      {/* Botones para cambiar la imagen */}
+   
       <div className="botones-imagenes">
         <button className="boton-music" onClick={() => handleImagenChange(producto.foto1)}>MÚSICO</button>
         <button className="boton-music" onClick={() => handleImagenChange(producto.foto2)}>GUITARRA</button>
         <button className="boton-music" onClick={() => handleImagenChange(producto.foto3)}>DETALLE</button>
       </div>
 
-      {/* Contenedor de la card */}
+      
       <div className="card">
         <article className="card__article">
           <div className="card__image-container">
