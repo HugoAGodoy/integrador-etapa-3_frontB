@@ -12,7 +12,7 @@ const ProductosProvider = ({ children }) => {
         getAllProductos();
     }, []);
 
-    // ✅ Obtener todos los productos
+    // Obtener todos los productos
     const getAllProductos = async () => {
         try {
             const prods = await peticionesHttp(API_PRODUCTOS_URL);
@@ -22,7 +22,7 @@ const ProductosProvider = ({ children }) => {
         }
     };
 
-    // ✅ Crear un nuevo producto
+    // Crear un nuevo producto
     const crearProductoContext = async (productoNuevo) => {
         try {
             delete productoNuevo.id;
@@ -42,7 +42,7 @@ const ProductosProvider = ({ children }) => {
         }
     };
 
-    // ✅ Actualizar un producto existente
+    // Actualizar un producto existente
     const actualizarProductoContext = async (productoAEditar) => {
         try {
             const options = {
@@ -66,7 +66,7 @@ const ProductosProvider = ({ children }) => {
         }
     };
 
-    // ✅ Eliminar un producto
+    // Eliminar un producto
     const eliminarProductoContext = async (id) => {
         try {
             const urlEliminacion = `${API_PRODUCTOS_URL}/${id}`;
