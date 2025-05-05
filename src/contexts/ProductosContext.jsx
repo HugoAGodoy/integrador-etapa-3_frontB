@@ -27,6 +27,8 @@ const ProductosProvider = ({ children }) => {
         try {
             delete productoNuevo.id;
 
+            productoNuevo.precio = Number(productoNuevo.precio);
+ 
             const options = {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },
@@ -52,7 +54,7 @@ const ProductosProvider = ({ children }) => {
             };
 
             // URL con el ID del producto para actualizar
-            const urlActualizar = `${API_PRODUCTOS_URL}/${productoAEditar.id}`;
+            const urlActualizar = `${API_PRODUCTOS_URL}${productoAEditar.id}`;
 
             const productoEditado = await peticionesHttp(urlActualizar, options);
             if (productoEditado) {
@@ -69,7 +71,7 @@ const ProductosProvider = ({ children }) => {
     // Eliminar un producto
     const eliminarProductoContext = async (id) => {
         try {
-            const urlEliminacion = `${API_PRODUCTOS_URL}/${id}`;
+            const urlEliminacion = `${API_PRODUCTOS_URL}${id}`;
 
             const options = {
                 method: 'DELETE'

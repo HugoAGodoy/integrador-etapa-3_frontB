@@ -36,6 +36,7 @@ const Card = ({ producto }) => {
           </div>
           <div className="card__content">
             <h2 className="card__heading">{producto.nombre}</h2>
+            
             <div className="card__description">
               <p>{producto.categoria}</p>
               <button className="boton-card" onClick={handleAgregar}>Agregar al Carrito</button>
