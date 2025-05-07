@@ -2,6 +2,9 @@ import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../../contexts/ProductosContext";
 import './Formulario.scss';
 
+import DragDrop from "./DragDrop";
+
+
 const Formulario = () => {
     const { 
         crearProductoContext, 
@@ -33,7 +36,7 @@ const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-
+        console.log("Enviando producto...")
 
         if (!form.precio || isNaN(Number(form.precio))) {
             alert('El precio es obligatorio y debe ser un número');
@@ -106,12 +109,30 @@ const Formulario = () => {
                     <input className="imput-form" type="text" id="lbl-detalle" name="detalles" value={form.detalles} onChange={handleChange} />
                 </div>
 
-                {['foto1', 'foto2', 'foto3'].map((foto, index) => (
+                
+                
+
+                {/* {['foto1', 'foto2', 'foto3'].map((foto, index) => (
                     <div className="form-group" key={index}>
                         <label className="label-form" htmlFor={`lbl-${foto}`}>Foto {index + 1}</label>
                         <input className="imput-form" type="text" id={`lbl-${foto}`} name={foto} value={form[foto]} onChange={handleChange} />
                     </div>
-                ))}
+                ))} */}
+
+                
+{['foto1', 'foto2', 'foto3'].map((campo, index) => (
+  <div className="form-group" key={index}>
+    <label className="label-form">Imagen {index + 1}</label>
+    <DragDrop 
+      campo={campo} 
+      imagenActual={form[campo]} 
+      setForm={setForm} 
+    />
+  </div>
+))}
+
+
+
 
                 <div className="form-group-check">
                     <label className="label-check" htmlFor="lbl-envio">Envío</label>
