@@ -2,13 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../../contexts/ProductosContext";
 import './Formulario.scss';
 
-import DragDrop from "./DragDrop";
+import DragDrop from "./Dragdrop";
 
 
 const Formulario = () => {
     const { 
         crearProductoContext, 
-        productoAEditar, 
+        productoAEditar, q
         setProductoAEditar, 
         actualizarProductoContext 
     } = useContext(ProductosContext);
