@@ -2,13 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../../contexts/ProductosContext";
 import './Formulario.scss';
 
-import DragDrop from "./Dragdrop";
+import Dragdrop from "./Dragdrop";
 
 
 const Formulario = () => {
     const { 
         crearProductoContext, 
-        productoAEditar, q
+        productoAEditar, 
         setProductoAEditar, 
         actualizarProductoContext 
     } = useContext(ProductosContext);
@@ -123,7 +123,7 @@ const Formulario = () => {
 {['foto1', 'foto2', 'foto3'].map((campo, index) => (
   <div className="form-group" key={index}>
     <label className="label-form">Imagen {index + 1}</label>
-    <DragDrop 
+    <Dragdrop 
       campo={campo} 
       imagenActual={form[campo]} 
       setForm={setForm} 
